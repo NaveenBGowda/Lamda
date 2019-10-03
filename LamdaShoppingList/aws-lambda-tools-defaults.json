@@ -14,5 +14,5 @@
     "template"      : "serverless.template",
     "template-parameters" : "\"ShouldCreateBucket\"=\"true\";\"BucketName\"=\"\"",
     "s3-bucket"           : "elasticbeanstalk-ap-south-1-583467868209",
-    "stack-name"          : "LamdaTest"
+    "stack-name"          : "Customer"
 }

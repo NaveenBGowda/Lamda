@@ -6,6 +6,7 @@ using LamdaShoppingList.Model;
 using LamdaShoppingList.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ORMBenchMark;
 
 namespace LamdaShoppingList.Controllers
 {
@@ -13,7 +14,7 @@ namespace LamdaShoppingList.Controllers
     [ApiController]
     public class ShoppingListController : Controller
     {
-
+      
         private readonly IShoppingListService _shoppingListService;
 
         public ShoppingListController(IShoppingListService shoppingListService)
@@ -24,7 +25,7 @@ namespace LamdaShoppingList.Controllers
 
         public IActionResult GetShoppingList()
         {
-          var result=  _shoppingListService.GetItemsFromShoppingList();
+            var result=  _shoppingListService.GetItemsFromShoppingList();
             return Ok(result);
 
         }
